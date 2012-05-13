@@ -12,8 +12,6 @@ Bring in the vendor libraries
 This can be done in two different ways:
 
 **Method #1**) Use deps file
-
-::
 	
 	[SimplePie]
 	    git=git://github.com/simplepie/simplepie.git
@@ -32,8 +30,6 @@ This can be done in two different ways:
 
 Register the SimplePie and Fkr namespaces
 -----------------------------------------
-
-::
 	
 	// app/autoload.php
 	$loader->registerNamespaces(array(
@@ -48,8 +44,6 @@ Register the SimplePie and Fkr namespaces
 
 Add SimplePieBundle to your application kernel
 ----------------------------------------------
-
-::
 	
 	// app/AppKernel.php
     public function registerBundles()
