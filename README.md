@@ -81,7 +81,7 @@ To get a configured SimplePie_Core class instance just use the following code
 	$this->get('fkr_simple_pie.rss');
 	
 	
-Thats all. For the complete api visit the [SimplePie api doc](http://simplepie.org/wiki/reference/start.
+Thats all. For the complete api visit the [SimplePie api doc](http://simplepie.org/wiki/reference/start).
 
 
 Licence
