@@ -31,15 +31,15 @@ This can be done in two different ways:
 Register the SimplePie and Fkr namespaces
 -----------------------------------------
 	
-	// app/autoload.php
-	$loader->registerNamespaces(array(
-		'Fkr'  => __DIR__.'/../vendor/bundles',
-		// your other namespaces
-	));
-	$loader->registerPrefixes(array(
-		'SimplePie_'	   => __DIR__.'/../vendor/simplepie',
-		// your other namespaces
-	));
+    // app/autoload.php
+    $loader->registerNamespaces(array(
+        'Fkr'  => __DIR__.'/../vendor/bundles',
+        // your other namespaces
+    ));
+    $loader->registerPrefixes(array(
+        'SimplePie_'	   => __DIR__.'/../vendor/simplepie',
+        // your other namespaces
+    ));
 
 
 Add SimplePieBundle to your application kernel
@@ -48,22 +48,22 @@ Add SimplePieBundle to your application kernel
 	// app/AppKernel.php
     public function registerBundles()
     {
-		return array(
+        return array(
             // ...
             new Fkr\SimplePieBundle\FkrSimplePieBundle(),
             // ...
         );
-	}
+    }
 
 
 Configuration
 =============
 
-	# app/config.yml
-	fkr_simple_pie:
-		cache_enabled: false
-		cache_dir: %kernel.cache_dir%/rss
-		cache_duration: 3600
+    # app/config.yml
+    fkr_simple_pie:
+        cache_enabled: false
+        cache_dir: %kernel.cache_dir%/rss
+        cache_duration: 3600
 
 
 * cache_enabled: [true or false] enables caching for the SimplePie_Core class
