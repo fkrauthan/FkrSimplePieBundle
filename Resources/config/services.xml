@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+		<parameter key="fkr_simple_pie.cache_enabled"/>
+		<parameter key="fkr_simple_pie.cache_dir" />
+		<parameter key="fkr_simple_pie.cache_duration" />
+		
+        <parameter key="fkr_simple_pie.factory">Fkr\Bundle\SimplePieBundle\DependencyInjection\Factory\SimplePieFactory</parameter>
+    </parameters>
+
+    <services>
+        <service id="fkr_simple_pie.rss" class="SimplePie_Core" factory-class="%fkr_simple_pie.factory%" factory-method="create">
+			<argument>%fkr_simple_pie.cache_enabled%</argument>
+			<argument>%fkr_simple_pie.cache_dir%</argument>
+			<argument>%fkr_simple_pie.cache_duration%</argument>
+        </service>
+    </services>
+</container>
