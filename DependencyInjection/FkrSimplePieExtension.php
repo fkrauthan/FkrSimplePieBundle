@@ -1,5 +1,5 @@
 <?php
-	namespace Fkr\Bundle\SimplePieBundle\DependencyInjection;
+	namespace Fkr\SimplePieBundle\DependencyInjection;
 
 	use Symfony\Component\DependencyInjection\ContainerBuilder;
 	use Symfony\Component\Config\FileLocator;

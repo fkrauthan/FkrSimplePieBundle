@@ -1,5 +1,5 @@
 <?php
-	namespace Fkr\Bundle\SimplePieBundle\DependencyInjection\Factory;
+	namespace Fkr\SimplePieBundle\DependencyInjection\Factory;
 	
 	use Symfony\Component\HttpKernel\Util\Filesystem;
 	

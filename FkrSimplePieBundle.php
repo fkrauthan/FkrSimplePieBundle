@@ -1,6 +1,6 @@
 <?php
 
-namespace Fkr\Bundle\SimplePieBundle;
+namespace Fkr\SimplePieBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -9,7 +9,7 @@
 		<parameter key="fkr_simple_pie.cache_dir" />
 		<parameter key="fkr_simple_pie.cache_duration" />
 		
-        <parameter key="fkr_simple_pie.factory">Fkr\Bundle\SimplePieBundle\DependencyInjection\Factory\SimplePieFactory</parameter>
+        <parameter key="fkr_simple_pie.factory">Fkr\SimplePieBundle\DependencyInjection\Factory\SimplePieFactory</parameter>
     </parameters>
 
     <services>
