@@ -7,7 +7,7 @@
 	class SimplePieFactory {
 		
 		public static function create($cacheEnabled, $cacheDir, $cacheDuration) {
-			$feed = new \SimplePie_Core();
+			$feed = new \SimplePie();
 			$feed->enable_cache($cacheEnabled);
 			$feed->set_cache_duration($cacheDuration);
 			$feed->set_cache_location($cacheDir);

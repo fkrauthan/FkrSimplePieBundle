@@ -37,7 +37,7 @@ Register the SimplePie and Fkr namespaces
         // your other namespaces
     ));
     $loader->registerPrefixes(array(
-        'SimplePie_'	   => __DIR__.'/../vendor/simplepie',
+        'SimplePie'	   => __DIR__.'/../vendor/simplepie',
         // your other namespaces
     ));
 
@@ -66,7 +66,7 @@ Configuration
         cache_duration: 3600
 
 
-* cache_enabled: [true or false] enables caching for the SimplePie_Core class
+* cache_enabled: [true or false] enables caching for the SimplePie class
 * cache_dir: [any dir] setup the caching dir which SimplePie should use
 * cache_duration: [secs] setting up caching for number of seconds.
 
@@ -76,7 +76,7 @@ For more information about SimplePie's caching please visit the [SimplePie wiki]
 Usage
 =====
 
-To get a configured SimplePie_Core class instance just use the following code
+To get a configured SimplePie class instance just use the following code
 
 	$this->get('fkr_simple_pie.rss');
 	
