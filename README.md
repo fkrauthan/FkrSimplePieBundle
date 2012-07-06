@@ -37,7 +37,7 @@ Register the SimplePie and Fkr namespaces
         // your other namespaces
     ));
     $loader->registerPrefixes(array(
-        'SimplePie'	   => __DIR__.'/../vendor/simplepie',
+        'SimplePie'	   => __DIR__.'/../vendor/simplepie/library',
         // your other namespaces
     ));
 
