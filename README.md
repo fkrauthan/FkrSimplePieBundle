@@ -11,7 +11,14 @@ Bring in the vendor libraries
 
 This can be done in two different ways:
 
-**Method #1**) Use deps file
+**Method #1**) Use composer
+
+    "require": {
+        "fkr/simplepie-bundle": "*"
+    }
+    
+    
+**Method #2**) Use deps file
 	
 	[SimplePie]
 	    git=git://github.com/simplepie/simplepie.git
@@ -22,7 +29,7 @@ This can be done in two different ways:
 		target=bundles/Fkr/SimplePieBundle
 
 
-**Method #2**) Use git submodules
+**Method #3**) Use git submodules
 
     git submodule add git://github.com/simplepie/simplepie.git vendor/simplepie
     git submodule add git://github.com/fkrauthan/FkrSimplePieBundle.git vendor/bundles/Fkr/SimplePieBundle
