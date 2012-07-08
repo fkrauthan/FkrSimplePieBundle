@@ -1,0 +1,23 @@
+{
+	"name": "fkr/simplepie-bundle",
+	"type": "symfony-bundle",
+	"description": "Integrates SimplePie into Symfony2",
+	"keywords": ["SimplePie", "Symfony Bundle", "RSS", "ATOM", "Feed"],
+	"homepage": "https://github.com/fkrauthan/FkrSimplePieBundle",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Florian Krauthan",
+			"email": "fkrauthan@gmx.net"
+		}
+	],
+	"require": {
+		"php": ">=5.3.2",
+		"symfony/framework-bundle": "2.1.*",
+		"simplepie/simplepie": "*"
+	},
+	"autoload": {
+		"psr-0": { "Fkr\\SimplePieBundle": "" }
+	},
+	"target-dir": "Fkr/SimplePieBundle"
+}
