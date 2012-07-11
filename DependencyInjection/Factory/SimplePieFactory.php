@@ -1,7 +1,7 @@
 <?php
 	namespace Fkr\SimplePieBundle\DependencyInjection\Factory;
 	
-	use Symfony\Component\HttpKernel\Util\Filesystem;
+	use Symfony\Component\Filesystem\Filesystem;
 	
 	
 	class SimplePieFactory {
