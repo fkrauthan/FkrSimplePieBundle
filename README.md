@@ -37,6 +37,8 @@ This can be done in two different ways:
 
 Register the SimplePie and Fkr namespaces
 -----------------------------------------
+
+This is *not* required if you installed using composer.
 	
     // app/autoload.php
     $loader->registerNamespaces(array(
@@ -86,7 +88,11 @@ Usage
 To get a configured SimplePie class instance just use the following code
 
 	$this->get('fkr_simple_pie.rss');
-	
+
+The service keeps only one instance of SimplePie. If you want to use multiple feeds over your application you have to `clone` the instance to stop them interfering
+
+	$one = clone $this->get('fkr_simple_pie.rss');
+	$two = clone $this->get('fkr_simple_pie.rss');
 	
 Thats all. For the complete api visit the [SimplePie api doc](http://simplepie.org/wiki/reference/start).
 
