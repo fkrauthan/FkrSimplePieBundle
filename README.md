@@ -14,7 +14,7 @@ This can be done in two different ways:
 **Method #1**) Use composer
 
     "require": {
-        "fkr/simplepie-bundle": "1.0.*"
+        "fkr/simplepie-bundle": "dev-master"
     }
     
     
