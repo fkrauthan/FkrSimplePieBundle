@@ -22,10 +22,10 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-            ->booleanNode('cache_enabled')->defaultFalse()->end()
-            ->scalarNode('cache_dir')->defaultValue('%kernel.cache_dir%/rss')->end()
-            ->scalarNode('cache_duration')->defaultValue('3600')->end()
-            ->booleanNode('idna_converter')->defaultTrue()->end()
+                ->booleanNode('cache_enabled')->defaultFalse()->end()
+                ->scalarNode('cache_dir')->defaultValue('%kernel.cache_dir%/rss')->end()
+                ->scalarNode('cache_duration')->defaultValue('3600')->end()
+                ->booleanNode('idna_converter')->defaultFalse()->end()
             ->end();
 
         return $treeBuilder;

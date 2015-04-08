@@ -73,13 +73,13 @@ Configuration
         cache_enabled: false
         cache_dir: %kernel.cache_dir%/rss
         cache_duration: 3600
-        idna_converter: ~ #default is true
+        idna_converter: ~ #default is false
 
 
 * cache_enabled: [true or false] enables caching for the SimplePie class
 * cache_dir: [any dir] setup the caching dir which SimplePie should use
 * cache_duration: [secs] setting up caching for number of seconds.
-* idna_converter: [true or false] enable the idna converter
+* idna_converter: [true or false] enable the idna converter a [Encoder/Decoder for Internationalized Domain Names](http://dev.simplepie.org/api/class-idna_convert.html)
 
 For more information about SimplePie's caching please visit the [SimplePie wiki](http://simplepie.org/wiki/faq/how_does_simplepie_s_caching_http_conditional_get_system_work).
 
