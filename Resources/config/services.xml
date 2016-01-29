@@ -13,7 +13,8 @@
     </parameters>
 
     <services>
-        <service id="fkr_simple_pie.rss" class="SimplePie" factory-class="%fkr_simple_pie.factory%" factory-method="create">
+        <service id="fkr_simple_pie.rss" class="SimplePie">
+            <factory class="%fkr_simple_pie.factory%" method="create" />
 			<argument>%fkr_simple_pie.cache_enabled%</argument>
 			<argument>%fkr_simple_pie.cache_dir%</argument>
 			<argument>%fkr_simple_pie.cache_duration%</argument>
