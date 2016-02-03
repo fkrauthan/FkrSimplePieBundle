@@ -14,16 +14,16 @@ This can be done in two different ways:
 **Method #1**) Use composer
 
     "require": {
-        "fkr/simplepie-bundle": "1.0.*@dev"
+        "fkr/simplepie-bundle": "dev-master"
     }
-    
-    
+
+
 **Method #2**) Use deps file
-	
+
 	[SimplePie]
 	    git=git://github.com/simplepie/simplepie.git
 		target=simplepie
-		
+
 	[FkrSimplePieBundle]
 	    git=git://github.com/fkrauthan/FkrSimplePieBundle.git
 		target=bundles/Fkr/SimplePieBundle
@@ -39,7 +39,7 @@ Register the SimplePie and Fkr namespaces
 -----------------------------------------
 
 This is *not* required if you installed using composer.
-	
+
     // app/autoload.php
     $loader->registerNamespaces(array(
         'Fkr'  => __DIR__.'/../vendor/bundles',
@@ -53,7 +53,7 @@ This is *not* required if you installed using composer.
 
 Add SimplePieBundle to your application kernel
 ----------------------------------------------
-	
+
 	// app/AppKernel.php
     public function registerBundles()
     {
@@ -95,7 +95,7 @@ The service keeps only one instance of SimplePie. If you want to use multiple fe
 
 	$one = clone $this->get('fkr_simple_pie.rss');
 	$two = clone $this->get('fkr_simple_pie.rss');
-	
+
 Thats all. For the complete api visit the [SimplePie api doc](http://simplepie.org/wiki/reference/start).
 
 
